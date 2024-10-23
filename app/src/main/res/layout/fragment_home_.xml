@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home_Fragment"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/card_view"
+        android:layout_marginTop="-20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:background="@color/back">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome"
+                    android:textStyle="bold"
+                    android:id="@+id/text">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:hint="@string/name">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/baseline_search_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:backgroundTint="@color/white"
+                android:hint="@string/search_item"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                tools:ignore="Autofill">
+
+            </EditText>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view"
+        android:id="@+id/l1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caregories"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/l1"
+        tools:ignore="UselessLeaf"
+        android:layout_marginTop="5dp"
+        android:id="@+id/categories">
+        <HorizontalScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/headphone"
+                       android:scaleType="fitXY">
+                   </ImageView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Hradphone"
+                       android:layout_gravity="center"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/shoes"
+                       android:scaleType="fitXY">
+                   </ImageView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Shoes"
+                       android:layout_gravity="center"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/shirt"
+                       android:scaleType="fitXY">
+                   </ImageView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="T Shirt"
+                       android:layout_gravity="center"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/cosmetics"
+                       android:scaleType="fitXY">
+                   </ImageView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Cosmetics"
+                       android:layout_gravity="center"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/phone"
+                       android:scaleType="fitXY">
+                   </ImageView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Smartphone"
+                       android:layout_gravity="center"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/watch"
+                       android:scaleType="fitXY">
+                   </ImageView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Smartwatch"
+                       android:layout_gravity="center"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/perfume"
+                       android:scaleType="fitXY">
+                   </ImageView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Perfume"
+                       android:layout_gravity="center"/>
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+
+
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categories"
+        android:id="@+id/l2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Products"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/l2">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/recycleitem">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

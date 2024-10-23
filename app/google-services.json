@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "414606812766",
+    "project_id": "shophub-e-commerce",
+    "storage_bucket": "shophub-e-commerce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414606812766:android:a92e4ccca5c3770cf9f6cf",
+        "android_client_info": {
+          "package_name": "com.example.shophub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVDMptiPw4z93IF78QEqajktO0i4hcFPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
