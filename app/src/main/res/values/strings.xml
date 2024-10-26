@@ -9,4 +9,6 @@
     <string name="welcome">Welcome</string>
     <string name="search_item">Search item</string>
     <string name="name">name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="password">Password</string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,26 +7,94 @@
     tools:context=".account"
     android:orientation="vertical"
     android:gravity="center">
-    <EditText
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="name"
-        android:id="@+id/name">
+        android:layout_height="500dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        android:id="@+id/card">
 
-    </EditText>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="pass"
-        android:id="@+id/password">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-    </EditText>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email"
+                app:errorEnabled="true"
+                android:alpha="0.7">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                app:errorEnabled="true"
+                android:alpha="0.7">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/card"
+        android:id="@+id/space">
+
+    </View>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/space"
+        android:backgroundTint="#EF2927"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Register"
+        android:textSize="20dp"
         android:id="@+id/button">
 
     </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:textColor="@color/black"
+        android:text="Already have an account?"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/text">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_below="@+id/text"
+        android:text="Login now"
+        android:textColor="#7582D3"
+        android:gravity="center"
+        android:id="@+id/login">
+
+    </TextView>
 
 
 
@@ -34,4 +102,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>

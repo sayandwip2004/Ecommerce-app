@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
     public  void Loadfrag(Fragment fragment, boolean flag){
         FragmentManager fm=getSupportFragmentManager();
         FragmentTransaction fg=fm.beginTransaction();
+
         if (flag)
             fg.add(R.id.fg,fragment);
         else

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class Home_Fragment extends Fragment {
     RecyclerView recyclerView;
     TextView textView;
-//    FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
+    FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
 
     public Home_Fragment() {
         // Required empty public constructor
@@ -38,10 +38,14 @@ public class Home_Fragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
         super.onViewCreated(view,savedInstanceState);
-//        textView=view.findViewById(R.id.name);
-//
-//        assert user != null;
-//        textView.setText(user.getEmail());
+        textView=view.findViewById(R.id.name);
+        if(user!=null){
+            textView.setText(user.getEmail());
+        }
+        else {
+            textView.setText("No user logged in");
+        }
+
 
     }
 }

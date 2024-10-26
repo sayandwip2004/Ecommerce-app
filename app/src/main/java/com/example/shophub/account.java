@@ -2,6 +2,7 @@ package com.example.shophub;
 
 import static android.app.ProgressDialog.show;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -51,9 +52,6 @@ public class account extends Fragment {
                 singUp();
             }
         });
-
-
-
     }
     public void singUp(){
         String getName=name.getText().toString().trim();
